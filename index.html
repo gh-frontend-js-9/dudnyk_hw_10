@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="currency-converter.js"></script>
+  <title>Currency converter</title>
+</head>
+<body>
+  <h1 class="heading">Live currency converter</h1>
+  
+  <form action="#" method="GET" class="form">
+  
+    <fieldset class="select-field">
+
+      <label for="fromCurrency" class="label">from
+        <select id="fromCurrencySelector" class="select"></select>
+      </label>
+
+      <label for="toCurrency" class="label">to
+        <select id="toCurrencySelector" class="select"></select>
+      </label>
+
+    </fieldset>
+  
+    <label for="amount">
+      <input type="number" min="1" id="amount" placeholder="enter the amount of money" class="input" required>
+    </label>
+
+    <button type="submit" id="submBtn" class="btn">Result</button>
+    
+    <p id="result" class="result"></p>
+
+  </form>
+</body>
+</html>
